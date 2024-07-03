@@ -1,0 +1,2597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<style>
+    ::-webkit-scrollbar {
+        width: 13px;
+        background-color: #111111;
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 3px solid white;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #078bff, #00f2fe);
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    .header {
+        height: 80px;
+        width: auto;
+    }
+
+    .section {
+        width: 100%;
+    }
+
+    .sheet {
+        height: 100%;
+        width: 1140px;
+        margin: auto;
+    }
+
+    .text {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    .btn-1 {
+        height: 24px;
+        width: 24px;
+        margin: 26.5px 0 0 1050px;
+        padding: 6px;
+    }
+
+    .image-logo {
+        display: block;
+        height: 32px;
+        width: 64px;
+        margin-top: -25px;
+    }
+
+    .logo-image-1 {
+        height: 32px;
+        width: 64px;
+    }
+
+    ul {
+        padding: 16px;
+    }
+
+    li {
+        font-size: 18px;
+        font-family: 'Open Sans', sans-serif;
+        list-style-type: none;
+        margin-bottom: 10px;
+        padding: 5px 10px;
+    }
+
+    .menu-list {
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+
+    .menu-list:hover {
+        color: #7E7E7E;
+    }
+
+    @media (max-width:1200px) {
+        .sheet {
+            width: 940px;
+        }
+
+        .btn-1 {
+            margin-left: 900px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .sheet {
+            width: 720px;
+        }
+
+        .btn-1 {
+            margin-left: 650px;
+        }
+    }
+
+    @media(max-width:768px) {
+        .sheet {
+            width: 540px;
+        }
+
+        .btn-1 {
+            margin-left: 490px;
+        }
+    }
+
+    @media(max-width:576px) {
+        .sheet {
+            width: 340px;
+        }
+
+        .btn-1 {
+            margin-left: 290px;
+        }
+    }
+
+    .section-1 {
+        height: 749px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image {
+        background-size: cover;
+        object-fit: cover;
+        background-position: 50% 50%;
+    }
+
+    .image-1 {
+        height: 749px;
+        width: 1123px;
+        position: absolute;
+        left: 0;
+        right: auto;
+    }
+
+    .group-1 {
+        position: relative;
+        width: 559px;
+        background-color: #355247;
+        min-height: 367px;
+        margin: 60px calc(((100% - 1140px) / 2)) 60px auto;
+    }
+
+    .container-layout-1 {
+        height: 100%;
+        padding: 30px 60px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .text-1 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto 0 0;
+    }
+
+    .text-2 {
+        font-size: 60px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        margin: 20px 0 0;
+    }
+
+    .text-3 {
+        line-height: 2;
+        font-weight: 400;
+        margin: 20px 0 0;
+    }
+
+    .btn-2 {
+        color: #fff;
+        text-underline-offset: 5px;
+    }
+
+    .btn-3 {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        border: 2px solid #fff;
+        border-radius: 0;
+        letter-spacing: 1.2px;
+        padding: 10px 39px;
+        margin: 30px auto 0 0;
+        color: #fff;
+    }
+
+    .btn-3:hover {
+        background: #fff;
+        color: #355247;
+    }
+
+    @media(max-width:1200px) {
+
+        .section-1,
+        .image-1 {
+            height: 660px;
+        }
+
+        .image-1 {
+            width: 852px;
+            margin: 0 auto 0 0;
+        }
+
+        .group-1 {
+            width: 516px;
+            margin-right: calc(((100% - 940px) / 2));
+        }
+    }
+
+    @media(max-width:991px) {
+
+        .section-1,
+        .image-1 {
+            height: 675px;
+        }
+
+        .image-1 {
+            width: 686px;
+        }
+
+        .group-1 {
+            margin-right: calc(((100% - 720px) / 2));
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-1 {
+            height: 584px;
+            justify-content: start;
+        }
+
+        .image-1 {
+            height: 417px;
+            width: 499px;
+            position: absolute;
+        }
+
+        .group-1 {
+            width: 492px;
+            min-height: 375px;
+            margin-top: 210px;
+            margin-right: calc(((100% - 540px) / 2));
+            margin-bottom: 0;
+        }
+
+        .container-layout-1 {
+            padding: 30px;
+            justify-content: center;
+        }
+
+        .text-2 {
+            font-size: 55px;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-1 {
+            height: 605px;
+        }
+
+        .image-1 {
+            height: 360px;
+            width: 360px;
+        }
+
+        .group-1 {
+            width: 340px;
+            margin-top: 245px;
+            min-height: 361px;
+            margin-right: auto;
+        }
+
+        .container-layout-1 {
+            padding: 30px 20px;
+        }
+
+        .text-2 {
+            font-size: 36px;
+        }
+    }
+
+    .section-2 {
+        height: 907px;
+    }
+
+    .sheet-2 {
+        padding: 60px 0;
+    }
+
+    .layout-wrap-1,
+    .layout-2,
+    .layout-row-2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout-row-2 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .layout-cell-1 {
+        width: 56.66666667%;
+    }
+
+    .container-layout-2 {
+        height: 100%;
+        padding: 26px 30px;
+    }
+
+    .layout-cell-2 {
+        width: 43.33333333%;
+    }
+
+    .shape-1 {
+        width: 144px;
+        height: 144px;
+        background-color: #d9ca9e;
+        border-radius: 50%;
+        margin: 24px auto 0 10px;
+    }
+
+    .svg-content {
+        height: 0;
+        width: 0;
+    }
+
+    .shape-2 {
+        height: 110px;
+        width: 110px;
+        fill: #355247;
+        margin: -62px 46px 0 auto;
+    }
+
+    .image-2 {
+        width: 494px;
+        height: 494px;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/p-1.jpg");
+        border-radius: 50%;
+        margin: 10px auto 0;
+    }
+
+    .container-layout-3 {
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-4 {
+        font-size: 60px;
+        font-weight: 300;
+        margin: 0 auto 0 0;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .text-5 {
+        font-size: 20px;
+        margin: 30px 0 0;
+        line-height: 2;
+    }
+
+    .text-6 {
+        line-height: 2;
+        font-size: 20px;
+        margin: 20px auto 0 0;
+    }
+
+    .btn-4 {
+        color: #111111;
+        font-weight: normal;
+    }
+
+    .btn-5 {
+        color: #111111;
+        border-color: #111111;
+    }
+
+    .btn-5:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    @media(max-width:1200px) {
+        .section-2 {
+            height: 871px;
+        }
+
+        .image-2 {
+            width: 473px;
+            height: 473px;
+        }
+
+        .text-5 {
+            letter-spacing: 0.6px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-2 {
+            height: 1297.59px;
+        }
+
+        .layout-cell-1,
+        .layout-cell-2 {
+            width: 100%;
+        }
+
+        .layout-cell-1 {
+            min-height: 682px;
+        }
+
+        .layout-cell-2 {
+            height: fit-content;
+        }
+
+        .container-layout-2 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 26px 30px 26px 22px;
+        }
+
+        .shape-1 {
+            height: 127px;
+            width: 127px;
+            margin-top: 0;
+        }
+
+        .shape-2 {
+            width: 72px;
+            height: 72px;
+            margin-top: -67px;
+            margin-right: 20px;
+        }
+
+        .image-2 {
+            height: 492px;
+            width: 492px;
+            margin-top: -18px;
+            margin-left: 64px;
+        }
+
+        .text-5 {
+            letter-spacing: 0.6px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-2 {
+            height: 1460.59px;
+        }
+
+        .layout-cell-1 {
+            min-height: 805px;
+        }
+
+        .container-layout-2 {
+            padding: 26px 10px;
+        }
+
+        .container-layout-3 {
+            padding: 30px 10px;
+        }
+
+        .shape-1 {
+            height: 140px;
+            width: 140px;
+        }
+
+        .shape-2 {
+            width: 100px;
+            height: 100px;
+            margin-top: -62px;
+            margin-right: 30px;
+        }
+
+        .image-2 {
+            height: 478px;
+            width: 478px;
+            margin: 0 14px 0 auto;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-2 {
+            height: 1363.19px;
+        }
+
+        .layout-cell-1 {
+            min-height: 574px;
+        }
+
+        .shape-1 {
+            height: 115px;
+            width: 115px;
+        }
+
+        .shape-2 {
+            width: 80px;
+            height: 80px;
+            margin-top: -55px;
+            margin-right: 10px;
+        }
+
+        .image-2 {
+            height: 307px;
+            width: 307px;
+            margin: 0 0 0 auto;
+        }
+
+        .text-4 {
+            font-size: 36px;
+        }
+    }
+
+    .section-3 {
+        height: 803px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layout-wrap-2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .layout-3,
+    .layout-col-1,
+    .layout-row-3 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout-col-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .size-30 {
+        min-height: fit-content;
+        max-width: 100%;
+    }
+
+    .layout-row-3 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-4 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-1.jpg");
+    }
+
+    .layout-cell-3,
+    .image-4,
+    .image-5,
+    .image-6 {
+        width: 33.33333333%;
+        min-height: 350px;
+    }
+
+    .image-5 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2.jpg");
+    }
+
+    .image-6 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-3.jpg");
+    }
+
+    .container-layout-4 {
+        height: 100%;
+        padding: 30px;
+    }
+
+    .layout-cell-3 {
+        background-color: #355247;
+    }
+
+    .cell-4 {
+        background-color: #A5935D;
+    }
+
+    .cell-5 {
+        background-color: #333029;
+    }
+
+    .container-layout-5 {
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        justify-content: center;
+    }
+
+    .con-6 {
+        padding-left: 50px;
+    }
+
+    .con-7 {
+        padding-right: 50px;
+    }
+
+    .text-7 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 auto;
+    }
+
+    .line-1 {
+        height: 51px;
+        width: 4px;
+        background-color: #fff;
+        margin: 42px auto 0;
+    }
+
+    .text-8 {
+        margin: 16px 0 0;
+        font-family: "Open Sans", sans-serif;
+        text-align: center;
+        line-height: 2;
+    }
+
+    .text-9 {
+        margin: 20px auto 30px;
+        text-align: center;
+        width: fit-content;
+    }
+
+    .btn-6 {
+        color: #111111;
+        text-underline-offset: 5px;
+    }
+
+    @media(max-width:1200px) {
+        .section-3 {
+            height: 681px;
+        }
+
+        .layout-cell-3,
+        .image-4,
+        .image-5,
+        .image-6 {
+            min-height: 289px;
+        }
+
+        .container-layout-5 {
+            justify-content: start;
+        }
+
+        .text-8 {
+            letter-spacing: 0.5px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-3 {
+            height: 616.38px;
+        }
+
+        .layout-cell-3,
+        .image-4,
+        .image-5,
+        .image-6 {
+            min-height: 221px;
+        }
+
+        .con-6,
+        .con-7 {
+            padding: 30px;
+        }
+
+        .line-1 {
+            margin-top: 25px;
+        }
+
+        .text-8 {
+            letter-spacing: 0;
+        }
+    }
+
+    @media(max-width:876px) {
+        .section-3 {
+            height: 680.38px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-3 {
+            height: 2283.39px;
+        }
+
+        .image-4,
+        .image-5,
+        .image-6 {
+            width: 100%;
+            min-height: 497px;
+        }
+
+        .container-layout-4 {
+            padding: 30px 10px;
+        }
+
+        .container-layout-5 {
+            padding: 30px 50px;
+        }
+
+        .layout-cell-3 {
+            width: 100%;
+            min-height: 240px;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-3 {
+            height: 1731.39px;
+        }
+
+        .image-4,
+        .image-5,
+        .image-6 {
+            min-height: 313px;
+        }
+
+        .container-layout-5 {
+            padding: 30px;
+        }
+    }
+
+    .section-4 {
+        height: 1238px;
+    }
+
+    .sheet-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .group-2 {
+        width: 450px;
+        min-height: 396px;
+        margin: 60px auto 0 0;
+    }
+
+    .container-layout-6 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-10 {
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .text-11 {
+        font-size: 18px;
+        margin: 20px 0 0;
+        line-height: 2;
+    }
+
+    .btn-7 {
+        padding: 10px 30px;
+        color: #111111;
+        border-radius: 0;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 2px solid black;
+        margin: 26px auto 0 0;
+    }
+
+    .btn-7:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .shape-3 {
+        width: 643px;
+        height: 643px;
+        border-radius: 50%;
+        background-color: #D9CA9E;
+        margin: 69px auto 0 95px;
+    }
+
+    .image-7 {
+        width: 587px;
+        height: 587px;
+        margin: -635px auto 0 0;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/per-1.jpg");
+        border-radius: 50%;
+    }
+
+    .image-8 {
+        width: 301px;
+        height: 301px;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-3.jpg");
+        background-position: 0% 100%;
+        border-radius: 50%;
+        margin: -752px 89px 0 auto;
+    }
+
+    .shape-4 {
+        width: 125px;
+        height: 125px;
+        margin: -862px 265px 0 auto;
+        border-radius: 50%;
+        background-color: #355247;
+    }
+
+    .text-12 {
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: 227px 0 0 750px;
+    }
+
+    .text-13 {
+        line-height: 1.5;
+        font-weight: 300;
+        margin: 758px 0 196px 750px;
+    }
+
+    .btn-8 {
+        font-size: 18px;
+        text-underline-offset: 4px;
+        color: #111111;
+    }
+
+    @media(max-width:1200px) {
+        .section-4 {
+            height: 1378px;
+        }
+
+        .image-8 {
+            margin-top: -842px;
+            margin-right: 21px;
+        }
+
+        .text-12 {
+            width: auto;
+            margin-top: 589px;
+            margin-left: 550px;
+        }
+
+        .shape-4 {
+            margin-top: -1198px;
+            margin-right: 187px;
+        }
+
+        .text-13 {
+            width: auto;
+            margin-top: 1094px;
+            margin-bottom: 56px;
+            margin-left: 550px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-4 {
+            height: 1378px;
+        }
+
+        .image-8 {
+            width: 263px;
+            height: 263px;
+        }
+
+        .shape-3 {
+            width: 617px;
+            height: 617px;
+            margin-right: 26px;
+            margin-left: auto;
+        }
+
+        .image-7 {
+            margin-top: -609px;
+        }
+
+        .text-12 {
+            margin-top: 627px;
+            margin-left: 330px;
+        }
+
+        .text-13 {
+            margin-left: 330px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-4 {
+            height: 1634px;
+        }
+
+        .image-8 {
+            margin-top: -773px;
+        }
+
+        .group-2 {
+            margin-top: 200px;
+        }
+
+        .shape-3 {
+            height: 504px;
+            width: 504px;
+            margin-top: 290px;
+            margin-right: auto;
+        }
+
+        .image-7 {
+            width: 466px;
+            height: 466px;
+            margin-top: -468px;
+        }
+
+        .shape-4 {
+            width: 109px;
+            height: 109px;
+            margin-top: -1461px;
+            margin-right: 90px;
+        }
+
+        .text-12 {
+            margin-top: 556px;
+            margin-left: 150px;
+        }
+
+        .text-13 {
+            margin-top: 1373px;
+            margin-bottom: -83px;
+            margin-left: 150px;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-4 {
+            height: 1435px;
+        }
+
+        .image-8 {
+            width: 238px;
+            height: 238px;
+            margin-top: -586px;
+        }
+
+        .group-2 {
+            width: 340px;
+        }
+
+        .shape-3 {
+            width: 267px;
+            height: 267px;
+            margin-top: 363px;
+            margin-right: 0;
+        }
+
+        .image-7 {
+            width: 304px;
+            height: 304px;
+            margin-top: -304px;
+        }
+
+        .shape-4 {
+            margin-top: -1266px;
+            margin-right: 36px;
+        }
+
+        .text-12 {
+            margin-top: 384px;
+            margin-left: 0;
+            font-size: 1.5rem;
+        }
+
+        .text-13 {
+            margin-top: 1178px;
+            margin-left: 0;
+            margin-bottom: -115px;
+        }
+    }
+
+    .section-5 {
+        height: 784px;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/bg-2.jpg");
+    }
+
+    .sheet-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .group-3 {
+        width: 505px;
+        min-height: 329px;
+        margin: 60px auto 0 0;
+    }
+
+    .container-layout-7 {
+        height: 100%;
+        padding: 0 30px 30px;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+    }
+
+    .text-14 {
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .text-15 {
+        margin: 20px 0 0;
+        line-height: 2;
+    }
+
+    .btn-9 {
+        color: #fff;
+        text-underline-offset: 5px;
+    }
+
+    .repeater-1 {
+        width: 591px;
+        display: grid;
+        margin: -329px 0 60px auto;
+        grid-template-columns: repeat(2, calc(50% - 15px));
+        min-height: 622px;
+        grid-gap: 30px;
+    }
+
+    .repeater-item {
+        background-color: #fff;
+        box-shadow: 5px 5px 20px 0 rgba(41, 51, 47, 0.4);
+    }
+
+    .container-layout-8 {
+        height: 100%;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .icon {
+        height: 94px;
+        width: 94px;
+        border-radius: 50%;
+        background-color: #d0e3dc;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .svg-1 {
+        height: 54px;
+        width: 54px;
+        fill: #355247;
+    }
+
+    .text-16 {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: 'Roboto', sans-serif;
+        width: fit-content;
+        margin: 23px auto 0;
+    }
+
+    .text-17 {
+        line-height: 2;
+        font-style: italic;
+        text-align: center;
+        margin: 20px 0 0;
+    }
+
+    @media(max-width:1200px) {
+        .section-5 {
+            height: 855.13px;
+        }
+
+        .group-3 {
+            width: 405px;
+            min-height: 335px;
+        }
+
+        .repeater-1 {
+            width: 474px;
+            min-height: 672px;
+            margin-top: -334px;
+        }
+
+        .container-layout-8 {
+            padding: 30px 20px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-5 {
+            height: 1048px;
+        }
+
+        .group-3 {
+            min-height: 236px;
+            width: 593px;
+            margin-right: 0;
+            margin-left: auto;
+        }
+
+        .container-layout-7 {
+            padding-left: 0;
+        }
+
+        .repeater-1 {
+            width: 582px;
+            margin-top: 0;
+            margin-right: 11px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-5 {
+            height: 1069.75px;
+        }
+
+        .group-3 {
+            min-height: 221px;
+            width: auto;
+        }
+
+        .container-layout-7 {
+            padding: 0 10px 30px 0;
+        }
+
+        .repeater-1 {
+            margin-top: 23px;
+            margin-right: initial;
+            margin-left: initial;
+            width: auto;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-5 {
+            height: 1732px;
+        }
+
+        .group-3 {
+            min-height: 241px;
+        }
+
+        .text-14 {
+            font-size: 24px;
+        }
+
+        .repeater-1 {
+            margin-top: 13px;
+            grid-template-columns: 100%;
+            width: auto;
+        }
+    }
+
+    .section-6 {
+        height: 1429px;
+    }
+
+    .sheet-5 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image-9 {
+        width: 254px;
+        height: 254px;
+        border-radius: 50%;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-1.jpg");
+        margin: 60px auto 0 71px;
+    }
+
+    .image-10 {
+        width: 628px;
+        height: 628px;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/p-3.jpg");
+        margin: 213px 20px 0 auto;
+        border-radius: 50%;
+    }
+
+    .image-11 {
+        width: 435px;
+        height: 435px;
+        background-size: cover;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/p-2.jpg");
+        margin: -815px auto 0 110px;
+        border-radius: 50%;
+    }
+
+    .group-4 {
+        min-height: 562px;
+        width: 570px;
+        margin: -850px 0 0 auto;
+    }
+
+    .container-layout-9 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 29px 60px;
+    }
+
+    .text-18 {
+        font-size: 60px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 300;
+        margin: 0;
+    }
+
+    .text-19 {
+        font-size: 18px;
+        margin: 20px 0 0;
+        line-height: 2;
+    }
+
+    .text-20 {
+        margin: 20px auto 0 0;
+    }
+
+    .btn-10 {
+        color: #111111;
+        text-underline-offset: 3px;
+    }
+
+    .btn-11 {
+        padding: 10px 39px;
+        text-transform: uppercase;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        border: 2px solid black;
+        margin: 25px auto 0 0;
+        border-radius: 0;
+    }
+
+    .btn-11:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .shape-5 {
+        width: 218px;
+        height: 218px;
+        border-radius: 50%;
+        margin: 328px auto 0 26px;
+        background-color: #355247;
+    }
+
+    .shape-6 {
+        width: 156px;
+        height: 155px;
+        margin: -986px auto 878px 384px;
+        fill: #a5935d;
+    }
+
+    @media(max-width:1200px) {
+        .section-6 {
+            height: 1452px;
+        }
+
+        .image-9 {
+            width: 249px;
+            height: 249px;
+            margin-left: 21px;
+        }
+
+        .image-10 {
+            width: 615px;
+            height: 615px;
+        }
+
+        .image-11 {
+            width: 422px;
+            height: 422px;
+            margin-left: 34px;
+            border: 20px solid white;
+        }
+
+        .group-4 {
+            min-height: 517px;
+            width: 470px;
+        }
+
+        .container-layout-9 {
+            padding: 29px 40px;
+        }
+
+        .shape-6 {
+            width: 134px;
+            height: 135px;
+            margin-left: 309px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-6 {
+            height: 1619px;
+        }
+
+        .image-9 {
+            width: 224px;
+            height: 224px;
+            margin-left: 20px;
+        }
+
+        .image-10 {
+            width: 575px;
+            height: 575px;
+            margin-top: 604px;
+            margin-right: 0;
+        }
+
+        .image-11 {
+            margin-top: -1129px;
+            margin-left: 20px;
+        }
+
+        .group-4 {
+            width: 374px;
+            background-color: #fff;
+            margin-top: -677px;
+        }
+
+        .container-layout-9 {
+            padding: 29px 30px;
+        }
+
+        .shape-5 {
+            width: 183px;
+            height: 183px;
+            margin-top: 185px;
+        }
+
+        .text-18 {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .shape-6 {
+            width: 112px;
+            height: 114px;
+            margin-top: -1018px;
+            margin-bottom: 1347px;
+            margin-left: 226px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-6 {
+            height: 2002.98px;
+        }
+
+        .image-9 {
+            width: 244px;
+            height: 244px;
+            margin-top: 59px;
+            margin-left: 0;
+        }
+
+        .image-10 {
+            width: 451px;
+            height: 451px;
+            margin-top: 120px;
+        }
+
+        .image-11 {
+            width: 340px;
+            height: 340px;
+            margin-top: 350px;
+            margin-right: 35px;
+            margin-left: auto;
+        }
+
+        .group-4 {
+            min-height: 662px;
+            width: 366px;
+            margin-top: -930px;
+        }
+
+        .container-layout-9 {
+            padding: 29px 20px;
+        }
+
+        .shape-5 {
+            width: 152px;
+            height: 152px;
+            margin-top: -160px;
+            margin-left: 13px;
+        }
+
+        .shape-6 {
+            margin: -990px 202px 1409px auto;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-6 {
+            height: 1750px;
+        }
+
+        .image-9 {
+            width: 204px;
+            height: 204px;
+            margin-top: 56px;
+        }
+
+        .image-10 {
+            width: 320px;
+            height: 320px;
+            margin-top: 1016px;
+        }
+
+        .image-11 {
+            width: 287px;
+            height: 287px;
+            margin-top: -1300px;
+            margin-right: auto;
+        }
+
+        .group-4 {
+            min-height: 616px;
+            width: 290px;
+            margin-top: -90px;
+        }
+
+        .container-layout-9 {
+            justify-content: center;
+            padding: 29px 0 29px 20px;
+        }
+
+        .text-18 {
+            font-size: 36px;
+        }
+
+        .shape-5 {
+            width: 125px;
+            height: 125px;
+            margin-top: 42px;
+            margin-left: 0;
+        }
+
+        .shape-6 {
+            width: 97px;
+            height: 99px;
+            margin-top: -1294px;
+            margin-right: 0;
+            margin-bottom: 1497px;
+        }
+    }
+
+    .section-7 {
+        height: 1389px;
+        background-color: #333029;
+    }
+
+    .sheet-6 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .text-21 {
+        font-size: 60px;
+        color: #fff;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin: 60px auto 0;
+    }
+
+    .text-22 {
+        font-size: 18px;
+        text-align: center;
+        color: #fff;
+        line-height: 2;
+        margin: 13px auto 0;
+        width: 838px;
+    }
+
+    .layout-wrap-3 {
+        width: 100%;
+        height: auto;
+        margin: 45px 0 0;
+    }
+
+    .layout-7,
+    .layout-col-2 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout-col-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .layout-row-7,
+    .layout-row-8,
+    .layout-row-9 {
+        display: flex;
+        flex-wrap: wrap;
+        min-height: fit-content;
+        max-width: 100%;
+    }
+
+    .size-60 {
+        width: 50%;
+    }
+
+    .layout-row-8 {
+        height: 100%;
+    }
+
+    .image-12 {
+        height: auto;
+        min-height: 480px;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2-1.jpg");
+        width: 100%;
+    }
+
+    .container-layout-11 {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .image-17 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2-6.jpg");
+    }
+
+    .layout-col-3 {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .layout-cell-4 {
+        min-height: 240px;
+        width: 50%;
+        background-color: #fff;
+    }
+
+    .container-layout-12 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 30px;
+    }
+
+    .image-13 {
+        min-height: 240px;
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2-3.jpg");
+        width: 50%;
+    }
+
+    .container-layout-13 {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .img-14 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2-2.jpg");
+    }
+
+    .img-15 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2-4.jpg");
+    }
+
+    .img-16 {
+        background-image: url("D:/SW/programs/Big-Website/interior studio/3images/con-2-5.jpg");
+    }
+
+    .text-23 {
+        font-size: 36px;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0;
+        line-height: 1.2;
+        font-weight: 300;
+    }
+
+    .text-24 {
+        line-height: 2;
+        margin: 20px 0 0;
+    }
+
+    .icon-2,
+    .icon-arrow {
+        height: 64px;
+        width: 64px;
+    }
+
+    .icon-arrow {
+        margin: 30px auto 0 0;
+    }
+
+    .icon-2:hover,
+    .icon-arrow:hover {
+        width: 90%;
+        transition-duration: 1s;
+    }
+
+    .color-cell {
+        background-color: #355247;
+        color: #fff;
+    }
+
+    .text-26 {
+        color: #fff;
+        margin: 29px auto 60px;
+        line-height: 2;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .btn-12 {
+        color: #fff;
+        text-underline-offset: 5px;
+    }
+
+    @media(max-width:1200px) {
+        .section-7 {
+            height: 1390px;
+        }
+
+        .text-23 {
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .text-25 {
+            font-weight: 300;
+            font-size: 36px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-7 {
+            height: 2979px;
+        }
+
+        .layout-row-7 {
+            flex-direction: column;
+        }
+
+        .size-60 {
+            width: 100%;
+        }
+
+        .text-22 {
+            width: 720px;
+        }
+
+        .image-12 {
+            min-height: 607px;
+        }
+
+        .image-13 {
+            min-height: 303px;
+        }
+
+        .img-16 {
+            min-height: 342px;
+        }
+
+        .text-23 {
+            font-weight: 300;
+            font-size: 36px;
+        }
+
+        .text-25 {
+            font-size: 48px;
+        }
+
+        .image-17 {
+            min-height: 645px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-7 {
+            height: 4027.75px;
+        }
+
+        .layout-row-9 {
+            flex-direction: column;
+        }
+
+        .layout-cell-4,
+        .image-13 {
+            width: 100%;
+        }
+
+        .text-21 {
+            text-align: center;
+        }
+
+        .text-22 {
+            width: auto;
+        }
+
+        .image-12,
+        .image-13 {
+            min-height: 455px;
+        }
+
+        .container-layout-13 {
+            min-height: 455px;
+            padding: 20px 10px;
+        }
+
+        .img-16,
+        .img-con {
+            min-height: 513px;
+        }
+
+        .image-17 {
+            min-height: 484px;
+        }
+
+        .layout-cell-4 {
+            min-height: 167.20px;
+        }
+
+        .container-layout-12 {
+            height: fit-content;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-7 {
+            height: 2962.58px;
+        }
+
+        .text-21 {
+            font-size: 36px;
+        }
+
+        .text-23 {
+            font-size: 24px;
+        }
+
+        .image-12,
+        .image-13 {
+            min-height: 286px;
+        }
+
+        .container-layout-12 {
+            padding: 20px;
+        }
+
+        .container-layout-13 {
+            min-height: 286px;
+            padding: 20px 10px;
+        }
+
+        .img-16,
+        .img-con {
+            min-height: 323px;
+        }
+
+        .image-17 {
+            min-height: 305px;
+        }
+    }
+
+    .section-8 {
+        height: 869px;
+        background-color: #333029;
+    }
+
+    .sheet-8 {
+        padding: 60px 0;
+    }
+
+    .layout-wrap-4,
+    .layout-8,
+    .layout-row-10 {
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout-row-10 {
+        display: flex;
+    }
+
+    .image-18 {
+        height: 100%;
+        width: 33.33333333%;
+        background-image: url("D:\\SW\\programs\\Big-Website\\interior studio\\images\\form-img.jpg");
+        background-position: 50% 50%;
+        background-size: cover;
+        object-fit: cover;
+    }
+
+    .container-layout-14 {
+        padding: 30px;
+    }
+
+    .layout-cell-5 {
+        height: 100%;
+        background-color: #fff;
+        width: 66.66666667%;
+    }
+
+    .container-layout-14 {
+        padding: 40px 30px;
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-1 {
+        height: auto;
+        width: 616px;
+        margin: 0 auto;
+    }
+
+    .inner-form {
+        height: 100%;
+        padding: 28px;
+        display: flex;
+        flex-direction: column;
+        margin-left: -15px;
+        width: calc(100% + 15px);
+    }
+
+    .form-text-1 {
+        font-size: 22px;
+        text-align: center;
+        margin: 0 0 15px;
+        padding: 0 0 0 15px;
+        font-weight: 700;
+    }
+
+    .form-group {
+        width: 100%;
+        margin: 0 0 15px;
+        padding: 0 0 0 15px;
+    }
+
+    .input {
+        padding: 10px 12px;
+        display: block;
+        width: 100%;
+        border: none;
+        stroke: #808080;
+        border-bottom: 2px solid #808080;
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    }
+
+    .field-label {
+        margin: 0 0 0 5px;
+    }
+
+    .btn-13 {
+        text-decoration: none;
+        color: #355247;
+    }
+
+    .btn-14 {
+        font-size: 20px;
+        padding: 11px 0 12px;
+        margin: 1px 0;
+        width: 100%;
+        font-weight: 400;
+        border-radius: 0;
+        background-color: #355247;
+        color: #fff;
+    }
+
+    .btn-14:hover {
+        background-color: #111111;
+        color: white;
+    }
+
+    .text-27 {
+        width: fit-content;
+        margin: 0 auto;
+        line-height: 2;
+    }
+
+    .btn-15 {
+        color: #111111;
+        text-underline-offset: 4px;
+    }
+
+    @media(max-width:1200px) {
+        .section-8 {
+            height: 818.53px;
+        }
+
+        .form-1 {
+            width: 567px;
+        }
+    }
+
+    @media(max-width:991px) {
+        .section-8 {
+            height: 1523.53px;
+        }
+
+        .layout-row-10 {
+            flex-direction: column;
+        }
+
+        .image-18,
+        .layout-cell-5 {
+            width: 100%;
+        }
+
+        .image-18 {
+            min-height: 715px;
+        }
+
+        .form-1 {
+            width: 567px;
+        }
+    }
+
+    @media(max-width:767px) {
+        .section-8 {
+            height: 1392px;
+        }
+
+        .image-18 {
+            min-height: 536px;
+        }
+
+        .container-layout-14 {
+            padding: 30px 10px;
+        }
+
+        .container-layout-14 {
+            padding: 30px;
+        }
+
+        .form-1 {
+            width: 470px;
+        }
+    }
+
+    @media(max-width:576px) {
+        .section-8 {
+            height: 1197.13px;
+        }
+
+        .image-18 {
+            min-height: 337px;
+        }
+
+        .container-layout-14 {
+            padding: 30px 10px;
+        }
+
+        .container-layout-14 {
+            padding: 30px 10px;
+        }
+
+        .form-1 {
+            width: 320px;
+        }
+
+        .inner-form {
+            margin: -8px;
+        }
+    }
+
+    .footer {
+        height: 142.78px;
+        color: #fff;
+        text-align: center;
+        background-color: #333333;
+    }
+
+    .sheet-9 {
+        padding-top: 49px;
+    }
+
+    .text-28 {
+        font-size: 14px;
+        width: 417px;
+        margin: 0 auto 49px;
+    }
+
+    @media(max-width:576px) {
+        .footer {
+            height: 165.17px;
+        }
+
+        .text-28 {
+            width: auto;
+            margin: 0 0 49px;
+        }
+    }
+
+    .section-9 {
+        height: 104px;
+        padding: 16px;
+        background-color: #333333;
+        text-align: center;
+        color: #fff;
+        line-height: 2;
+        font-size: 12.8px;
+    }
+
+    .last-text {
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    .last-link {
+        color: #d0e3dc;
+    }
+
+    #progress {
+        /* background-color: #03cc65; */
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        z-index: 999;
+        display: none;
+        place-items: center;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    #progress-value {
+        font-size: 35px;
+        display: block;
+        height: calc(100% - 15px);
+        width: calc(100% - 15px);
+        background-color: #fff;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+    }
+</style>
+
+<body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+
+    <header class="clearfix header">
+        <div class="clearfix sheet sheet-1">
+            <button class="btn btn-1" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i
+                    class="fa-solid fa-bars fa-xl" style="color: black;"></i></button>
+
+            <div class="offcanvas offcanvas-start"
+                style="width: 300px; transition-duration: 0.6s; background-color: black;" data-bs-scroll="true"
+                tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body m-auto">
+                    <ul>
+                        <a class="menu-list" href="D:\SW\programs\Big-Website\interior studio\1.html">
+                            <li>Home</li>
+                        </a>
+                        <a class="menu-list" href="2.html">
+                            <li>About Studio</li>
+                        </a>
+                        <a class="menu-list" href="">
+                            <li>Interior</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="image image-logo">
+                <img src="D:\SW\programs\Big-Website\interior studio\images\logo-img.png" class="logo-image-1" alt="">
+            </a>
+        </div>
+    </header>
+
+    <section class="clearfix section section-1">
+        <img src="D:/SW/programs/Big-Website/interior studio/3images/bg-1.jpg" alt="" class="image image-1" data-image-width="1426" data-image-height="1080">
+        <div class="group group-1">
+            <div class="container-layout container-layout-1">
+                <h5 class="text text-1">What we do<br></h5>
+                <h2 class="text text-2"> Interior Design and Decoration</h2>
+                <p class="text text-3">Image from <a href="" class="btn-2">Freepik</a></p>
+                <a href="#" class="btn btn-3">learn more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="clearfix section section-2">
+        <div class="clearfix sheet sheet-2">
+            <div class="layout-wrap layout-wrap-1">
+                <div class="layout-2">
+                    <div class="layout-row-2">
+                        <div class="layout-cell layout-cell-1">
+                            <div class="container-layout container-layout-2">
+                                <div class="shape shape-1"></div>
+                                <div class="shape shape-2">
+                                    <svg class="svg-link" preserveAspectRatio="none" viewBox="0 0 160 160">
+                                        <use xlink:href="#svg-7386"></use>
+                                    </svg>
+                                    <svg class="svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-7386"
+                                        style="enable-background:new 0 0 160 160;">
+                                        <path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
+                                        s80-35.8,80-80S124.2,0,80,0L80,0z"></path>
+                                    </svg>
+                                </div>
+                                <div alt="" class="image image-2" data-image-width="900" data-image-height="928"></div>
+                            </div>
+                        </div>
+                        <div class="layout-cell layout-cell-2">
+                            <div class="container-layout container-layout-3">
+                                <h2 class="text text-4"> Our Work</h2>
+                                <p class="text text-5"> We are a leading interior design studio
+                                    specialising in commercial, hospitality and residential projects. Duis aute irure
+                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                    deserunt mollit anim.</p>
+                                <p class="text text-6">Image from <a href="" class="btn-4 btn-2">Freepik</a>
+                                </p>
+                                <a href="#" class="btn btn-5 btn-3">learn more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clearfix section section-3">
+        <div class="clearfix layout-wrap layout-wrap-2">
+            <div class="layout-3">
+                <div class="layout-col-1">
+                    <div class="size-30">
+                        <div class="layout-row-3">
+                            <div class="image image-4" data-image-width="390" data-image-height="378">
+                                <div class="container-layout container-layout-4"></div>
+                            </div>
+                            <div class="layout-cell-3">
+                                <div class="container-layout container-layout-5">
+                                    <h5 class="text text-7">What we Do</h5>
+                                    <div class="line line-1"></div>
+                                    <p class="text text-8">Sample text. Click to select the text box. Click again or
+                                        double click to start editing the text.</p>
+                                </div>
+                            </div>
+                            <div class="image image-5" data-image-width="626" data-image-height="417">
+                                <div class="container-layout container-layout-4"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="size-30">
+                        <div class="layout-row-3">
+                            <div class="layout-cell-3 cell-4">
+                                <div class="container-layout container-layout-5 con-6">
+                                    <h5 class="text text-7">What we Do</h5>
+                                    <div class="line line-1"></div>
+                                    <p class="text text-8">Sample text. Click to select the text box. Click again or
+                                        double click to start editing the text.</p>
+                                </div>
+                            </div>
+                            <div class="image image-6" data-image-width="390" data-image-height="378">
+                                <div class="container-layout container-layout-4"></div>
+                            </div>
+                            <div class="layout-cell-3 cell-5">
+                                <div class="container-layout container-layout-5 con-7">
+                                    <h5 class="text text-7">What we Do</h5>
+                                    <div class="line line-1"></div>
+                                    <p class="text text-8">Sample text. Click to select the text box. Click again or
+                                        double click to start editing the text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="text text-9">Images from <a href="#" class="btn-6">Freepik</a></p>
+    </section>
+
+    <section class="clearfix section section-4">
+        <div class="clearfix sheet sheet-3">
+            <div class="group group-2">
+                <div class="container-layout container-layout-6">
+                    <h3 class="text text-10">Floral Interiors Collections</h3>
+                    <p class="text text-11">Nisl purus in mollis nunc sed id. Aenean vel elit
+                        scelerisque mauris pellentesque pulvinar pellentesque. Turpis egestas sed tempus urna et
+                        pharetra. Id aliquet risus feugiat in ante metus dictum. Aliquet nec ullamcorper sit amet risus
+                        nullam. Lectus nulla at volutpat diam ut. </p>
+                    <a href="#" class="btn text btn-7">learn more</a>
+                </div>
+            </div>
+            <div class="shape shape-3"></div>
+            <div class="image image-7" data-image-width="1000" data-image-height="1000"></div>
+            <div class="image image-8" data-image-width="626" data-image-height="417">
+            </div>
+            <h3 class="text text-12"> Living Room Houseplants</h3>
+            <div class="shape shape-4"></div>
+            <p class="text text-13">Image from <a href="" class="btn-8">Freepik</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="clearfix section section-5" data-image-width="1920" data-image-height="960">
+        <div class="clearfix sheet sheet-4">
+            <div class="group group-3">
+                <div class="container-layout container-layout-7">
+                    <h3 class="text text-14"> We design &amp; deliver beautiful
+                        hotels, luxury homes and innovative workplace interiors </h3>
+                    <p class="text text-15">Image from <a href="#" class="btn-9">Freepik</a>
+                    </p>
+                </div>
+            </div>
+            <div class="repeater repeater-1">
+                <div class="repeater-item item-1">
+                    <div class="container-layout container-layout-8">
+                        <span class="icon icon-1">
+                            <svg class="svg-link svg-1" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512">
+                                <use xlink:href="#svg-078c"></use>
+                            </svg>
+                            <svg class="svg-content" viewBox="0 0 512 512" id="svg-078c">
+                                <g>
+                                    <path
+                                        d="m437 21c-36.219 0-66.522 25.808-73.491 60h-348.509c-8.284 0-15 6.716-15 15v380c0 8.284 6.716 15 15 15h422c41.355 0 75-33.645 75-75v-320c0-41.355-33.645-75-75-75zm-45 75c0-24.813 20.187-45 45-45s45 20.187 45 45v260.036c-12.543-9.436-28.131-15.036-45-15.036s-32.457 5.6-45 15.036zm45 365h-407v-350h332v305c0 8.284 6.716 15 15 15s15-6.716 15-15c0-24.813 20.187-45 45-45s45 20.187 45 45-20.187 45-45 45z">
+                                    </path>
+                                    <path
+                                        d="m316 141h-240c-8.284 0-15 6.716-15 15v260c0 8.284 6.716 15 15 15h240c8.284 0 15-6.716 15-15v-260c0-8.284-6.716-15-15-15zm-65 260v-25c0-8.284-6.716-15-15-15s-15 6.716-15 15v25h-130v-110h50v35c0 8.284 6.716 15 15 15h30c8.284 0 15-6.716 15-15s-6.716-15-15-15h-15v-85c0-8.284-6.716-15-15-15s-15 6.716-15 15v35h-50v-90h210v90h-30v-45c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15s6.716 15 15 15h15v30h-25c-8.284 0-15 6.716-15 15s6.716 15 15 15h85v110z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <h5 class="text text-16">Projects</h5>
+                        <p class="text text-17">Sample text. Click to select the text box. Click
+                            again or double click to start editing the text.</p>
+                    </div>
+                </div>
+                <div class="repeater-item item-2">
+                    <div class="container-layout container-layout-8">
+                        <span class="icon icon-1">
+                            <svg class="svg-link svg-1" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512">
+                                <use xlink:href="#svg-c30b"></use>
+                            </svg>
+                            <svg class="svg-content" viewBox="0 0 512 512" id="svg-c30b">
+                                <g>
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="m326 180.154c-6.286 0-11.98-4.052-14.115-9.946-2.133-5.888-.23-12.679 4.605-16.644 4.865-3.989 11.816-4.459 17.216-1.27 5.379 3.176 8.23 9.683 7.004 15.791-1.391 6.926-7.64 12.069-14.71 12.069z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                            <g>
+                                                <g>
+                                                    <path
+                                                        d="m186 180.154c-6.287 0-11.98-4.051-14.115-9.946-2.13-5.88-.232-12.689 4.605-16.644 4.86-3.973 11.827-4.479 17.218-1.27 5.37 3.197 8.232 9.667 7.003 15.791-1.392 6.928-7.639 12.069-14.711 12.069z">
+                                                    </path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                        <g>
+                                            <g>
+                                                <path
+                                                    d="m445 251.734c-6.285 0-11.979-4.049-14.115-9.942-2.132-5.881-.235-12.692 4.605-16.648 4.872-3.982 11.81-4.462 17.216-1.27 5.377 3.175 8.239 9.692 7.004 15.801-1.399 6.921-7.641 12.059-14.71 12.059z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                                <path
+                                                    d="m67 251.734c-6.537 0-12.44-4.395-14.35-10.64-1.909-6.238.598-13.209 6.02-16.83 4.938-3.297 11.505-3.314 16.484-.109 5.32 3.426 7.941 10.096 6.391 16.229-1.666 6.593-7.742 11.35-14.545 11.35z">
+                                                </path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                    <g>
+                                        <path
+                                            d="m511.975 233.915c-.956-35.152-29.224-63.733-64.354-65.067-3.814-.145-7.581.043-11.281.517v-23.471c0-60.51-49.228-109.737-109.737-109.737h-142.041c-60.509 0-109.737 49.228-109.737 109.737v23.357c-3.431-.396-6.92-.537-10.445-.403-35.13 1.334-63.398 29.915-64.354 65.068-.618 22.72 10.17 44.009 28.858 56.948 6.335 4.387 10.116 11.358 10.116 18.65v151.33c0 8.284 6.716 15 15 15h59.824c8.284 0 15-6.716 15-15v-46.399h254.352v46.399c0 8.284 6.716 15 15 15h59.823c8.284 0 15-6.716 15-15l.001-151.33c0-7.292 3.782-14.264 10.116-18.65 18.689-12.94 29.477-34.23 28.859-56.949zm-68.976 150.53h-373.999v-29.657h373.999zm-308.914-59.657v-28.646c0-12.006 9.767-21.772 21.772-21.772h200.288c12.005 0 21.771 9.767 21.771 21.772v28.646zm-29.261-178.895c0-43.968 35.77-79.737 79.737-79.737h142.041c43.967 0 79.737 35.77 79.737 79.737v35.19c-2.716 1.932-5.31 4.078-7.76 6.437-12.772 12.296-20.008 28.68-20.5 46.317-.108.729-.165 1.473-.165 2.23v13.119c-6.623-3.083-13.997-4.817-21.771-4.817h-200.287c-7.775 0-15.148 1.734-21.772 4.817v-13.119c0-.758-.056-1.502-.165-2.23-.493-17.638-7.728-34.021-20.5-46.317-2.697-2.597-5.577-4.926-8.595-7.005zm-74.81 88.838c.527-19.398 16.122-35.169 35.503-35.905 10.169-.388 19.791 3.273 27.095 10.306 7.266 6.995 11.286 16.384 11.334 26.457-.003.135-.006.27-.007.406-.003.725.145 88.793.145 88.793h-35.084v-15.273c0-17.134-8.613-33.326-23.039-43.314-10.326-7.153-16.288-18.916-15.947-31.47zm68.81 211.113h-29.824v-31.399h29.824zm314.352 0v-31.399h29.823v31.399zm52.862-179.644c-14.425 9.989-23.038 26.181-23.038 43.314v15.273h-35.085s.152-88.115.145-88.867c-.001-.112-.003-.225-.007-.339.05-10.07 4.07-19.457 11.334-26.449 7.304-7.033 16.916-10.696 27.096-10.307 19.381.736 34.976 16.508 35.504 35.904.34 12.556-5.622 24.319-15.949 31.471z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                        </span>
+                        <h5 class="text text-16"> Great design</h5>
+                        <p class="text text-17">Sample text. Click to select the text box. Click
+                            again or double click to start editing the text.</p>
+                    </div>
+                </div>
+                <div class="repeater-item item-3">
+                    <div class="container-layout container-layout-8">
+                        <span class="icon icon-1">
+                            <svg class="svg-link svg-1" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512">
+                                <use xlink:href="#svg-46d3"></use>
+                            </svg>
+                            <svg class="svg-content" viewBox="0 0 512 512" id="svg-46d3">
+                                <g>
+                                    <path
+                                        d="m497 0h-482c-8.284 0-15 6.716-15 15s6.716 15 15 15h6v467c0 8.284 6.716 15 15 15h120c8.284 0 15-6.716 15-15v-43.897c0-1.035-.02-2.069-.034-3.103h170.068c-.014 1.034-.034 2.067-.034 3.103v43.897c0 8.284 6.716 15 15 15h120c8.284 0 15-6.716 15-15v-467h6c8.284 0 15-6.716 15-15s-6.716-15-15-15zm-372.423 314.319c43.483-65.888 66.423-142.18 66.423-221.384v-2.935h50v270h-89.654c-7.111-16.134-16.078-31.476-26.769-45.681zm146.423-224.319h50v2.935c0 79.205 22.94 155.497 66.423 221.384-10.691 14.205-19.658 29.547-26.769 45.681h-89.654zm50-30h-130v-30h130zm-160-30v62.935c0 74.177-21.723 145.595-62.907 207.065h-47.093v-270zm-20 452h-90v-152h47.818c27.25 35.109 42.182 78.551 42.182 123.103zm27.589-62c-1.477-10.148-3.624-20.171-6.422-30h187.667c-2.798 9.829-4.945 19.852-6.422 30zm292.411 62h-90v-28.897c0-44.552 14.932-87.993 42.182-123.103h47.818zm0-182h-47.093c-41.184-61.471-62.907-132.889-62.907-207.065v-62.935h110z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <h5 class="text text-16"> Home Decor</h5>
+                        <p class="text text-17">Sample text. Click to select the text box. Click
+                            again or double click to start editing the text.</p>
+                    </div>
+                </div>
+                <div class="repeater-item item-4">
+                    <div class="container-layout container-layout-8">
+                        <span class="icon icon-1">
+                            <svg class="svg-link svg-1" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512">
+                                <use xlink:href="#svg-d316"></use>
+                            </svg>
+                            <svg class="svg-content" viewBox="0 0 512 512" id="svg-d316">
+                                <g>
+                                    <path d="m361 360h30v30h-30z"></path>
+                                    <path d="m121 360h30v30h-30z"></path>
+                                    <path
+                                        d="m301 240v-30h125v-210h-340v210h125v30h-211v210h61v62h69.406l30-62h191.188l30 62h69.406v-62h61c0-11.67 0-202.146 0-210zm-185-60v-150h280v150c-28.182 0-251.512 0-280 0zm125 30h30v30h-30zm-129.406 272h-20.594v-32h36.078zm129.406-62c-8.264 0-203.163 0-211 0v-90h211zm180 62h-20.594l-15.484-32h36.078zm61-62c-22.305 0-182.624 0-211 0v-90h211zm-452-120v-30h452v30c-24.458 0-436.578 0-452 0z">
+                                    </path>
+                                </g>
+                            </svg>
+                        </span>
+                        <h5 class="text text-16"> Innovations</h5>
+                        <p class="text text-17">Sample text. Click to select the text box. Click
+                            again or double click to start editing the text.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clearfix section-6" style="overflow: hidden;">
+        <div class="clearfix sheet sheet-5">
+            <div class="image image-9" data-image-width="390" data-image-height="378"></div>
+            <div class="image image-10" data-image-width="900" data-image-height="900"></div>
+            <div class="image image-11" data-image-width="625" data-image-height="417"></div>
+            <div class="group group-4">
+                <div class="container-layout container-layout-9">
+                    <h2 class="text text-18"> It's time to design your living spaces</h2>
+                    <p class="text text-19">Paragraph. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum.
+                        Phasellus sed efficitur dolor, et ultricies sapien.&nbsp;<i></i>
+                    </p>
+                    <p class="text text-20">Images from <a href="" class="btn-10">Freepik</a>
+                    </p>
+                    <a href="#" class="btn btn-11">learn more</a>
+                </div>
+            </div>
+            <div class="shape shape-5"></div>
+            <div class="shape shape-6">
+                <svg class="svg-link" preserveAspectRatio="none" viewBox="0 0 160 160">
+                    <use xlink:href="#svg-410b"></use>
+                </svg>
+                <svg class="svg-content" viewBox="0 0 160 160" x="0px" y="0px" id="svg-410b"
+                    style="enable-background:new 0 0 160 160;">
+                    <path d="M80,30c27.6,0,50,22.4,50,50s-22.4,50-50,50s-50-22.4-50-50S52.4,30,80,30 M80,0C35.8,0,0,35.8,0,80s35.8,80,80,80
+                    s80-35.8,80-80S124.2,0,80,0L80,0z"></path>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <section class="clearfix section section-7">
+        <div class="clearfix sheet sheet-6">
+            <h2 class="text text-21"> Design Your Dream Space</h2>
+            <p class="text text-22"> We carefully select products and offer them through a global community of artisans
+            </p>
+            <div class="layout-wrap layout-wrap-3">
+                <div class="layout-7">
+                    <div class="layout-col-2">
+                        <div class="size-30 30-2">
+                            <div class="layout-row-7">
+                                <div class="size-60">
+                                    <div class="layout-row-8">
+                                        <div class="image image-12" data-image-width="1000" data-image-height="1000">
+                                            <div class="container-layout container-layout-11" src=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="size-60">
+                                    <div class="layout-col-3">
+                                        <div class="size-30">
+                                            <div class="layout-row-9">
+                                                <div class="layout-cell layout-cell-4 text-cell">
+                                                    <div class="container-layout container-layout-12">
+                                                        <h3 class="text text-23"> How Can I Get Service?</h3>
+                                                        <p class="text text-24">Sample text. Click to select
+                                                            the text box. Click again or double click to start editing
+                                                            the text.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="image image-13" data-image-width="626"
+                                                    data-image-height="417">
+                                                    <div class="container-layout container-layout-13" src=""></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="size-30">
+                                            <div class="layout-row-9">
+                                                <div class="image image-13 img-14" data-image-width="700"
+                                                    data-image-height="700">
+                                                    <div class="container-layout container-layout-13" src=""></div>
+                                                </div>
+                                                <div class="layout-cell layout-cell-4 text-cell">
+                                                    <div class="container-layout container-layout-12">
+                                                        <h3 class="text text-23">About Us</h3>
+                                                        <p class="text text-24">Sample text. Click to select
+                                                            the text box. Click again or double click to start editing
+                                                            the text.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="size-30 30-2">
+                            <div class="layout-row-7">
+                                <div class="size-60">
+                                    <div class="layout-col-3">
+                                        <div class="size-30">
+                                            <div class="layout-row-9">
+                                                <div class="image image-13 img-15" data-image-width="626"
+                                                    data-image-height="347">
+                                                    <div class="container-layout container-layout-13" src=""></div>
+                                                </div>
+                                                <div class="layout-cell layout-cell-4 color-cell text-cell">
+                                                    <div class="container-layout container-layout-12">
+                                                        <h3 class="text text-23">Luxury Line</h3>
+                                                        <p class="text text-24">Sample text. Click to select
+                                                            the text box. Click again or double click to start editing
+                                                            the text.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="size-30">
+                                            <div class="layout-row-9">
+                                                <div class="layout-cell layout-cell-4 text-cell">
+                                                    <div class="container-layout container-layout-12">
+                                                        <h3 class="text text-23 text-25">Exclusive Furniture Design</h3>
+                                                        <span class="icon-arrow">
+                                                            <img class="icon-2" src="D:/SW/programs/Big-Website/interior studio/3images/arrow.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="image image-13 img-16" data-image-width="417"
+                                                    data-image-height="626">
+                                                    <div class="container-layout container-layout-13 img-con" src="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="size-60">
+                                    <div class="layout-row-8">
+                                        <div class="image image-12 image-17" data-image-width="800"
+                                            data-image-height="800">
+                                            <div class="container-layout container-layout-11" src=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="text text-26 text-9">Image from <a href="" class="btn-12">Freepik</a>
+            </p>
+        </div>
+    </section>
+
+    <section class="clearfix section section-8">
+        <div class="clearfix sheet sheet-8">
+            <div class="layout-wrap layout-wrap-4">
+                <div class="layout-8">
+                    <div class="layout-row-10">
+                        <div class="image image-18" data-image-width="1600" data-image-height="1450">
+                            <div class="container-layout container-layout-14"></div>
+                        </div>
+                        <div class="layout-cell layout-cell-5">
+                            <div class="container-layout container-layout-14">
+                                <div class="form form-1 text">
+                                    <form action="" class="clearfix inner-form" source="email" name="form"
+                                        style="padding: 28px;">
+                                        <p class="form-text-1"> We can't
+                                            wait to work with you! Drop us a line and we'll get back to you soon!</p>
+                                        <div class="form-group form-name">
+                                            <label for="name-4c18" class="text label form-label">Name</label>
+                                            <input type="text" placeholder="Enter your Name" id="name-4c18" name="name"
+                                                class="input input-rectangle form-control" required>
+                                        </div>
+                                        <div class="form-email form-group">
+                                            <label for="email-4c18" class="text label form-label">Email</label>
+                                            <input type="email" placeholder="Enter a valid email address"
+                                                id="email-4c18" name="email" class="form-control input input-rectangle"
+                                                required>
+                                        </div>
+                                        <div class="form-group form-message">
+                                            <label for="message-4c18" class="text label form-label"
+                                                required>Message</label>
+                                            <textarea placeholder="Enter your message" rows="4" cols="50"
+                                                id="message-4c18" name="message"
+                                                class="form-control input input-rectangle" required></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="block-a5f4-23 field-label"></label>
+                                            <input type="checkbox" id="agree-2953" name="agree"
+                                                class="agree-checkbox field-input form-check-input" required>
+                                            <label for="agree-2953"
+                                                class="agree-label text field-label form-check-label">I
+                                                accept the <a class="btn-13" href="#">Terms of Service</a>
+                                            </label>
+                                        </div>
+                                        <div class="form-submit form-group">
+                                            <a href="#" class="btn text btn-14">Submit your request</a>
+                                            <input type="submit" style="display: none;" class="form-control-hidden">
+                                        </div>
+                                    </form>
+                                </div>
+                                <p class="text text-27">Images from <a href="#" class="btn-15">Freepik</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="clearfix section footer">
+        <div class="clearfix sheet sheet-9">
+            <p class="text text-28">Sample text. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit nullam nunc justo sagittis suscipit ultrices.</p>
+        </div>
+    </footer>
+
+    <section class="clearfix section section-9">
+        <a href="#" class="text last-link">Web Templates</a>
+        <p class="last-text text">created with</p>
+        <a href="#" class="text last-link">Website Builder</a>.
+    </section>
+
+    <script src="D:\SW\programs\Big-Website\interior studio\script.js"></script>
+</body>
+
+</html>
